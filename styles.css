@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f3eee9;
@@ -7,81 +11,182 @@ body{
 }
 
 
+/* HEADER */
+
 header{
-    padding:40px;
+    min-height:30vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
 
 h1{
-    letter-spacing:8px;
+    letter-spacing:0.6vw;
+    font-size:clamp(28px,4vw,48px);
 }
 
 .subtitulo{
     color:#e98ab4;
     font-style:italic;
-    margin-top:-10px;
+    margin-top:-1vh;
+    font-size:clamp(14px,2vw,20px);
 }
 
 
+/* MENU */
+
 nav{
-    margin-top:30px;
+    margin-top:3vh;
 }
 
 nav a{
-    margin:0 25px;
+    margin:0 2vw;
     text-decoration:none;
     color:black;
     font-weight:bold;
-    letter-spacing:3px;
+    letter-spacing:0.3vw;
+    font-size:clamp(14px,1.3vw,18px);
 }
 
+
+/* SECCIONES */
 
 section{
-    width:70%;
+    width:75%;
     margin:auto;
-    padding:40px 0;
+    padding:6vh 0;
 }
+
+section p{
+    line-height:1.7;
+    font-size:clamp(14px,1.2vw,18px);
+}
+
+
+/* TITULOS */
 
 h2{
     border:2px dashed #e98ab4;
     display:inline-block;
-    padding:10px 25px;
-    margin-bottom:30px;
+    padding:1vh 2vw;
+    margin-bottom:4vh;
+    letter-spacing:3px;
 }
 
 
+/* GALERIA */
 
 .galeria{
     display:flex;
     justify-content:center;
-    gap:30px;
-    margin-top:20px;
+    align-items:center;
+    gap:3vw;
+    margin-top:3vh;
+    flex-wrap:wrap;
 }
 
 .galeria img{
-    width:200px;
+    width:18vw;
+    min-width:150px;
+    max-width:220px;
     height:auto;
+    border-radius:6px;
 }
 
+
+/* FAMILIA */
 
 .familia-container{
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:40px;
+    gap:4vw;
+    margin-top:2vh;
+}
+
+.familia-container p{
+    width:40%;
+    text-align:left;
 }
 
 .familia-container img{
-    width:300px;
+    width:22vw;
+    max-width:320px;
+    border-radius:6px;
 }
 
 
+/* FOOTER */
+
 footer{
-    margin-top:40px;
-    padding:20px;
+    margin-top:5vh;
+    padding:3vh;
 }
 
 .redes{
     display:flex;
     justify-content:center;
-    gap:50px;
+    gap:4vw;
+    flex-wrap:wrap;
+    font-size:clamp(13px,1.1vw,16px);
+}
+
+
+
+/* ----------- TABLET ----------- */
+
+@media (max-width:900px){
+
+section{
+    width:85%;
+}
+
+.familia-container{
+    flex-direction:column;
+}
+
+.familia-container p{
+    width:100%;
+    text-align:center;
+}
+
+.familia-container img{
+    width:60%;
+}
+
+.galeria img{
+    width:30vw;
+}
+
+}
+
+
+/* ----------- CELULAR ----------- */
+
+@media (max-width:600px){
+
+nav{
+    display:flex;
+    flex-direction:column;
+    gap:1vh;
+}
+
+nav a{
+    margin:0;
+}
+
+section{
+    width:90%;
+}
+
+.galeria img{
+    width:60vw;
+}
+
+.redes{
+    flex-direction:column;
+    gap:1vh;
+}
+
 }
