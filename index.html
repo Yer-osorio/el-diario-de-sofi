@@ -1,96 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>El Diario de Sofi</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="icon" type="image/png" href="img\la-vida.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOFI Diseño de Interiores</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
-
 <body>
 
-<header>
-    <h1>EL DIARIO DE SOFI</h1>
-    <p class="subtitulo">Happy Life Since 2004</p>
 
-    <nav>
-        <a href="#biografia">BIOGRAFÍA</a>
-        <a href="#familia">FAMILIA</a>
-        <a href="#pasiones">PASIONES</a>
-    </nav>
-</header>
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <img src="img/logo-sofi.png" alt="Logo Sofi" />
+      </a>
 
+      <nav class="menu">
+        <a class="active" href="index.html">INICIO</a>
+        <a href="nosotros.html">NOSOTROS</a>
+        <a href="proyectos.html">PROYECTOS</a>
+      </nav>
 
-<section id="biografia">
+      <a class="btn" href="https://wa.me/573053077433" target="_blank">
+        ASESORÍA GRATUITA
+      </a>
+    </div>
+  </header>
 
-<h2>BIOGRAFÍA</h2>
+ 
+  <section class="hero">
+    <div class="container hero-grid">
 
-<p>
-Sofía Pulgarín Gómez. Nací el 20 de septiembre de 2004 en Medellín.
-Fui hija única hasta el año 2009, cuando llegó mi hermanita Vale.
-Desde ese momento mi vida comenzó a ser más feliz, porque ya tenía
-a alguien con quien compartirla.
-</p>
+      <div class="hero-text">
+        <p class="subtitle">DISEÑAMOS ESPACIOS</p>
+        <h1>
+          Inspirados en ti, <br>
+          diseñados para <span>vivir</span>
+        </h1>
 
-<div class="galeria">
-    <img src="img/bio1.jpg" alt="Foto biografia 1">
-    <img src="img/bio2.jpg" alt="Foto biografia 2">
-    <img src="img/bio3.jpg" alt="Foto biografia 3">
-</div>
+        <p class="description">
+          Transformamos espacios en experiencias únicas que reflejan tu estilo,
+          necesidades y personalidad.
+        </p>
 
-</section>
+        <div class="hero-buttons">
+          <a class="btn" href="proyectos.html">CONOCE NUESTROS PROYECTOS</a>
+          <a class="link" href="nosotros.html">SOBRE NOSOTROS →</a>
+        </div>
+      </div>
 
-<section id="familia">
+      <div class="hero-image">
+        <img src="img/inicio-hero.jpg" alt="Diseño interior sala moderna">
+      </div>
 
-<h2>FAMILIA</h2>
-
-<div class="familia-container">
-
-<p>
-Mi familia está conformada por mi mamá, Lorena Gómez,
-mi hermana Valentina Londoño Gómez y mi padrastro Luis Londoño.
-Ellos han sido una parte fundamental de mi vida y el apoyo
-que siempre me impulsa a seguir adelante.
-</p>
-
-<img src="img/familia.jpg" alt="Foto familia">
-
-</div>
-
-</section>
+    </div>
+  </section>
 
 
-<section id="pasiones">
+  <section class="services">
+    <div class="container">
+      <p class="subtitle center">LO QUE HACEMOS</p>
+      <h2 class="center">Servicios de diseño de interiores</h2>
+      <p class="center small">
+        Soluciones personalizadas para cada espacio y estilo de vida.
+      </p>
 
-<h2>PASIONES</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>DISEÑO RESIDENCIAL</h3>
+          <p>Creamos hogares que reflejan tu esencia y mejoran tu día a día.</p>
+        </div>
 
-<p>
-Mis pasiones siempre han estado relacionadas con aprender cosas
-nuevas y explorar diferentes formas de expresarme. A lo largo de
-mi vida he participado en actividades como la natación, la música,
-el inglés, el modelaje y el baile.
-</p>
+        <div class="service-card">
+          <h3>DISEÑO COMERCIAL</h3>
+          <p>Espacios funcionales y atractivos que potencian tu marca.</p>
+        </div>
 
-<div class="galeria">
-    <img src="img/pasion1.jpg" alt="Foto pasion 1">
-    <img src="img/pasion2.jpg" alt="Foto pasion 2">
-</div>
+        <div class="service-card">
+          <h3>ASESORÍA & CONSULTORÍA</h3>
+          <p>Te guiamos para tomar las mejores decisiones en tu proyecto.</p>
+        </div>
 
-</section>
+        <div class="service-card">
+          <h3>DECORACIÓN & ESTILISMO</h3>
+          <p>Detalles que transforman y dan vida a tus espacios.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-<footer>
-
-<div class="redes">
-
-<p>Facebook: Sofia pulgarin</p>
-<p>Instagram: spg20__</p>
-<p>Email: sofia.pulgaringo@amigo.edu.co</p>
-
-</div>
-
-</footer>
+  <footer class="footer">
+    <div class="container footer-flex">
+      <p>2026 SOFI - DISEÑO DE INTERIORES</p>
+    </div>
+  </footer>
 
 </body>
 </html>
