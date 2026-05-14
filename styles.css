@@ -34,6 +34,11 @@ body{
   color: #ff0aa6;
 }
 
+.logo a{
+  text-decoration: none;
+  color: white;
+}
+
 .navbar{
   display: flex;
   gap: 40px;
@@ -287,6 +292,7 @@ body{
   width: 320px;
   outline: none;
   font-weight: 700;
+  text-align: center;
 }
 
 .footer-input input::placeholder{
