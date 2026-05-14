@@ -1,0 +1,455 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER */
+
+.header{
+  background: #000;
+  color: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo h1{
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 0.9;
+}
+
+.logo span{
+  color: #ff0aa6;
+}
+
+.navbar{
+  display: flex;
+  gap: 40px;
+}
+
+.navbar a{
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.navbar a:hover{
+  color: #ff0aa6;
+}
+
+/* HERO */
+
+.hero{
+  background: linear-gradient(to right, #ef8bcf, #f3df93);
+  min-height: 350px;
+  padding: 60px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text h2{
+  font-size: 2.4rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.hero-text p{
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.hero-button a{
+  background: #ff0aa6;
+  color: black;
+  text-decoration: none;
+  padding: 25px 50px;
+  border-radius: 30px;
+  font-weight: 900;
+  font-size: 1.5rem;
+  display: inline-block;
+  text-align: center;
+}
+
+/* ARTISTAS HOME */
+
+.artists-section{
+  background: #ececec;
+  padding: 70px 8%;
+}
+
+.artists-section h2{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+
+.artists-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px;
+}
+
+.artist-card{
+  background: #f5f1eb;
+  padding: 10px;
+  text-align: center;
+}
+
+.artist-card img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.artist-card h3{
+  margin-top: 15px;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+/* TITULO ENTRADAS */
+
+.tickets-title{
+  background: linear-gradient(to right, #ef8bcf, #f3df93);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.tickets-title h2{
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.tickets-title p{
+  margin-top: 10px;
+  font-size: 1.3rem;
+}
+
+/* ENTRADAS */
+
+.tickets-section{
+  background: #f5f5f5;
+  padding: 80px 8%;
+}
+
+.tickets-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 40px;
+  justify-items: center;
+}
+
+.ticket-card{
+  background: #a9a9a9;
+  padding: 30px;
+  text-align: center;
+}
+
+.ticket-card h3{
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.ticket-card p{
+  margin-bottom: 15px;
+}
+
+.ticket-card h4{
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.ticket-card ul{
+  margin-bottom: 30px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.ticket-card li{
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.ticket-card a{
+  background: #ff0aa6;
+  color: white;
+  text-decoration: none;
+  padding: 14px 30px;
+  border-radius: 30px;
+  display: inline-block;
+  font-weight: 900;
+  margin-top: 10px;
+}
+
+/* INFO */
+
+.info-section{
+  background: #d9d9d9;
+  padding: 50px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.info-box{
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.info-box i{
+  font-size: 4rem;
+  color: #ff4fc3;
+  margin-bottom: 20px;
+}
+
+.info-box h3{
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.info-box p{
+  font-weight: 700;
+}
+
+.line{
+  width: 3px;
+  height: 120px;
+  background: #999;
+}
+
+/* FOOTER */
+
+.footer{
+  background: black;
+  color: white;
+  padding: 40px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-logo h2{
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 0.9;
+}
+
+.footer-logo span{
+  color: #ff0aa6;
+}
+
+.socials{
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.socials i{
+  font-size: 2rem;
+}
+
+.footer-news h3{
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.footer-input input{
+  padding: 18px 30px;
+  border-radius: 30px;
+  border: 4px solid #ff4fc3;
+  background: transparent;
+  color: white;
+  width: 320px;
+  outline: none;
+  font-weight: 700;
+}
+
+.footer-input input::placeholder{
+  color: white;
+}
+
+/* ========================= */
+/* PAGINA ARTISTAS */
+/* ========================= */
+
+.artists-page{
+  background: #efefef;
+  padding: 40px 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.artist-item{
+  width: 100%;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.artist-card-top{
+  background: white;
+  border: 2px solid #ffffff;
+}
+
+.artist-image-box{
+  padding: 10px;
+  text-align: center;
+}
+
+.artist-image-box img{
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.artist-image-box h3{
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.artist-description-box{
+  padding: 15px;
+  min-height: 220px;
+}
+
+.artist-description-box p{
+  text-align: center;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.artist-video-box{
+  margin-top: 15px;
+  width: 100%;
+  height: 170px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.artist-video-box video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.artist-video-box iframe{
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 992px){
+
+  .artists-container{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .tickets-container{
+    grid-template-columns: 1fr;
+  }
+
+  .ticket-card{
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .hero{
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer{
+    justify-content: center;
+    text-align: center;
+  }
+
+  .line{
+    display: none;
+  }
+
+  .artists-page{
+    gap: 40px;
+  }
+
+}
+
+@media(max-width: 768px){
+
+  .header{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .navbar{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .artists-container{
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text h2{
+    font-size: 1.7rem;
+  }
+
+  .hero-text p{
+    font-size: 1.1rem;
+  }
+
+  .tickets-title h2{
+    font-size: 3rem;
+  }
+
+  .logo h1{
+    font-size: 2.2rem;
+  }
+
+  .footer-news h3{
+    font-size: 1.4rem;
+  }
+
+  .footer-input input{
+    width: 100%;
+  }
+
+  .artist-item{
+    max-width: 100%;
+  }
+
+  .artist-description-box{
+    min-height: auto;
+  }
+
+}
