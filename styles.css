@@ -66,6 +66,14 @@ body{
     transition: 0.3s;
 }
 
+.menu a:link{
+    color: white;
+}
+
+.menu a:visited{
+    color: white;
+}
+
 .menu a:hover{
     color: #ff0aa6;
 }
