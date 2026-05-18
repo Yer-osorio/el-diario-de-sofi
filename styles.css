@@ -1,461 +1,606 @@
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html{
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body{
-  font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* HEADER */
+.encabezado{
+    background-color: black;
 
-.header{
-  background: #000;
-  color: white;
-  padding: 20px 8%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
-.logo h1{
-  font-size: 3rem;
-  font-weight: 900;
-  line-height: 0.9;
+
+.logo-rio h1{
+    font-size: 50px;
+
+    font-weight: 900;
+
+    line-height: 45px;
 }
 
-.logo span{
-  color: #ff0aa6;
+.logo-rio span{
+    color: #ff0aa6;
 }
 
-.logo a{
-  text-decoration: none;
-  color: white;
+.logo-rio a{
+    text-decoration: none;
+
+    color: white;
 }
 
-.navbar{
-  display: flex;
-  gap: 40px;
+.menu{
+    display: flex;
+
+    gap: 40px;
 }
 
-.navbar a{
-  color: white;
-  text-decoration: none;
-  font-weight: 700;
-  transition: 0.3s;
+.menu a{
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
 }
 
-.navbar a:hover{
-  color: #ff0aa6;
+.menu a:hover{
+    color: #ff0aa6;
 }
 
-/* HERO */
 
-.hero{
-  background: linear-gradient(to right, #ef8bcf, #f3df93);
-  min-height: 350px;
-  padding: 60px 8%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
+.parte-principal{
+    background: linear-gradient(to right, #ef8bcf, #f3df93);
+
+    min-height: 350px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 40px;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
-.hero-text h2{
-  font-size: 2.4rem;
-  font-weight: 900;
-  margin-bottom: 20px;
+.texto-principal h2{
+    font-size: 38px;
+
+    font-weight: 900;
+
+    margin-bottom: 20px;
 }
 
-.hero-text p{
-  font-size: 1.4rem;
-  line-height: 1.5;
+.texto-principal p{
+    font-size: 22px;
+
+    line-height: 35px;
 }
 
-.hero-button a{
-  background: #ff0aa6;
-  color: black;
-  text-decoration: none;
-  padding: 25px 50px;
-  border-radius: 30px;
-  font-weight: 900;
-  font-size: 1.5rem;
-  display: inline-block;
-  text-align: center;
+.boton-principal a{
+    background-color: #ff0aa6;
+
+    color: black;
+
+    text-decoration: none;
+
+    font-size: 25px;
+
+    font-weight: 900;
+
+    border-radius: 30px;
+
+    display: inline-block;
+
+    text-align: center;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-/* ARTISTAS HOME */
 
-.artists-section{
-  background: #ececec;
-  padding: 70px 8%;
+.zona-artistas{
+    background-color: #ececec;
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
-.artists-section h2{
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 900;
-  margin-bottom: 50px;
+.zona-artistas h2{
+    text-align: center;
+
+    font-size: 50px;
+
+    font-weight: 900;
+
+    margin-bottom: 50px;
 }
 
-.artists-container{
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 30px;
+.contenedor-artistas{
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 30px;
 }
 
-.artist-card{
-  background: #f5f1eb;
-  padding: 10px;
-  text-align: center;
+.carta-artista{
+    background-color: #f5f1eb;
+
+    padding: 10px;
+
+    text-align: center;
 }
 
-.artist-card img{
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
+.carta-artista img{
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
 }
 
-.artist-card h3{
-  margin-top: 15px;
-  font-size: 1.4rem;
-  font-weight: 900;
+.carta-artista h3{
+    margin-top: 15px;
+
+    font-size: 24px;
+
+    font-weight: 900;
 }
 
-/* TITULO ENTRADAS */
 
-.tickets-title{
-  background: linear-gradient(to right, #ef8bcf, #f3df93);
-  padding: 50px 20px;
-  text-align: center;
+.titulo-entradas{
+    background: linear-gradient(to right, #ef8bcf, #f3df93);
+
+    text-align: center;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.tickets-title h2{
-  font-size: 4rem;
-  font-weight: 900;
+.titulo-entradas h2{
+    font-size: 60px;
+
+    font-weight: 900;
 }
 
-.tickets-title p{
-  margin-top: 10px;
-  font-size: 1.3rem;
+.titulo-entradas p{
+    margin-top: 10px;
+
+    font-size: 20px;
 }
 
-/* ENTRADAS */
 
-.tickets-section{
-  background: #f5f5f5;
-  padding: 80px 8%;
+.zona-entradas{
+    background-color: #f5f5f5;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
-.tickets-container{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 40px;
-  justify-items: center;
+.contenedor-entradas{
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 40px;
+
+    justify-items: center;
 }
 
-.ticket-card{
-  background: #a9a9a9;
-  padding: 30px;
-  text-align: center;
+.carta-entrada{
+    background-color: #a9a9a9;
+
+    padding: 30px;
+
+    text-align: center;
 }
 
-.ticket-card h3{
-  font-size: 2.5rem;
-  font-weight: 900;
-  margin-bottom: 20px;
+.carta-entrada h3{
+    font-size: 40px;
+
+    font-weight: 900;
+
+    margin-bottom: 20px;
 }
 
-.ticket-card p{
-  margin-bottom: 15px;
+.carta-entrada p{
+    margin-bottom: 15px;
 }
 
-.ticket-card h4{
-  font-size: 2rem;
-  font-weight: 900;
-  margin-bottom: 20px;
+.carta-entrada h4{
+    font-size: 32px;
+
+    font-weight: 900;
+
+    margin-bottom: 20px;
 }
 
-.ticket-card ul{
-  margin-bottom: 30px;
-  padding-left: 20px;
-  text-align: left;
+.carta-entrada ul{
+    text-align: left;
+
+    padding-left: 20px;
+
+    margin-bottom: 30px;
 }
 
-.ticket-card li{
-  margin-bottom: 10px;
-  font-weight: 600;
+.carta-entrada li{
+    margin-bottom: 10px;
+
+    font-weight: 600;
 }
 
-.ticket-card a{
-  background: #ff0aa6;
-  color: white;
-  text-decoration: none;
-  padding: 14px 30px;
-  border-radius: 30px;
-  display: inline-block;
-  font-weight: 900;
-  margin-top: 10px;
+.carta-entrada a{
+    background-color: #ff0aa6;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    display: inline-block;
+
+    font-weight: 900;
+
+    margin-top: 10px;
+
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-/* INFO */
 
-.info-section{
-  background: #d9d9d9;
-  padding: 50px 8%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
+.zona-info{
+    background-color: #d9d9d9;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
-.info-box{
-  flex: 1;
-  min-width: 250px;
-  text-align: center;
+.caja-info{
+    flex: 1;
+
+    min-width: 250px;
+
+    text-align: center;
 }
 
-.info-box i{
-  font-size: 4rem;
-  color: #ff4fc3;
-  margin-bottom: 20px;
+.caja-info i{
+    font-size: 60px;
+
+    color: #ff4fc3;
+
+    margin-bottom: 20px;
 }
 
-.info-box h3{
-  font-size: 2rem;
-  font-weight: 900;
-  margin-bottom: 10px;
+.caja-info h3{
+    font-size: 32px;
+
+    font-weight: 900;
+
+    margin-bottom: 10px;
 }
 
-.info-box p{
-  font-weight: 700;
+.caja-info p{
+    font-weight: bold;
 }
 
-.line{
-  width: 3px;
-  height: 120px;
-  background: #999;
+.linea{
+    width: 3px;
+
+    height: 120px;
+
+    background-color: gray;
 }
 
-/* FOOTER */
 
-.footer{
-  background: black;
-  color: white;
-  padding: 40px 8%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
+.pie-pagina{
+    background-color: black;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
-.footer-logo h2{
-  font-size: 2.5rem;
-  font-weight: 900;
-  line-height: 0.9;
+.logo-abajo h2{
+    font-size: 40px;
+
+    font-weight: 900;
+
+    line-height: 40px;
 }
 
-.footer-logo span{
-  color: #ff0aa6;
+.logo-abajo span{
+    color: #ff0aa6;
 }
 
-.socials{
-  margin-top: 15px;
-  display: flex;
-  gap: 15px;
+.texto-footer h3{
+    font-size: 32px;
+
+    font-weight: 900;
 }
 
-.socials i{
-  font-size: 2rem;
+.input-footer input{
+    width: 100%;
+
+    background-color: transparent;
+
+    color: white;
+
+    border: 4px solid #ff4fc3;
+
+    border-radius: 30px;
+
+    outline: none;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-.footer-news h3{
-  font-size: 2rem;
-  font-weight: 900;
+.input-footer input::placeholder{
+    color: white;
+
+    font-size: 12px;
 }
 
-.footer-input input{
-  padding: 18px 30px;
-  border-radius: 30px;
-  border: 4px solid #ff4fc3;
-  background: transparent;
-  color: white;
-  width: 320px;
-  outline: none;
-  font-weight: 700;
-  text-align: center;
+
+.pagina-artistas{
+    background-color: #efefef;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-.footer-input input::placeholder{
-  color: white;
+.artista{
+    width: 100%;
+
+    max-width: 280px;
+
+    display: flex;
+
+    flex-direction: column;
 }
 
-/* ========================= */
-/* PAGINA ARTISTAS */
-/* ========================= */
+.tarjeta-artista{
+    background-color: white;
 
-.artists-page{
-  background: #efefef;
-  padding: 40px 5%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
+    border: 2px solid white;
 }
 
-.artist-item{
-  width: 100%;
-  max-width: 280px;
-  display: flex;
-  flex-direction: column;
+.foto-artista{
+    padding: 10px;
+
+    text-align: center;
 }
 
-.artist-card-top{
-  background: white;
-  border: 2px solid #ffffff;
+.foto-artista img{
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
 }
 
-.artist-image-box{
-  padding: 10px;
-  text-align: center;
+.foto-artista h3{
+    margin-top: 10px;
+
+    font-size: 24px;
+
+    font-weight: 900;
 }
 
-.artist-image-box img{
-  width: 100%;
-  height: 230px;
-  object-fit: cover;
+.descripcion-artista{
+    padding: 10px;
+
+    min-height: 220px;
 }
 
-.artist-image-box h3{
-  margin-top: 10px;
-  font-size: 1.5rem;
-  font-weight: 900;
+.descripcion-artista p{
+    text-align: center;
+
+    line-height: 25px;
+
+    font-size: 15px;
 }
 
-.artist-description-box{
-  padding: 15px;
-  min-height: 220px;
+.video-artista{
+    width: 100%;
+
+    height: 170px;
+
+    background-color: white;
+
+    overflow: hidden;
+
+    margin-top: 15px;
 }
 
-.artist-description-box p{
-  text-align: center;
-  line-height: 1.5;
-  font-size: 0.95rem;
+.video-artista video{
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
 }
 
-.artist-video-box{
-  margin-top: 15px;
-  width: 100%;
-  height: 170px;
-  background: #ffffff;
-  overflow: hidden;
+.video-artista iframe{
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
 }
 
-.artist-video-box video{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.artist-video-box iframe{
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-/* RESPONSIVE */
 
 @media(max-width: 992px){
 
-  .artists-container{
-    grid-template-columns: repeat(2,1fr);
-  }
+    .contenedor-artistas{
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-  .tickets-container{
-    grid-template-columns: 1fr;
-  }
+    .contenedor-entradas{
+        grid-template-columns: 1fr;
+    }
 
-  .ticket-card{
-    width: 100%;
-    max-width: 400px;
-  }
+    .carta-entrada{
+        width: 100%;
 
-  .hero{
-    justify-content: center;
-    text-align: center;
-  }
+        max-width: 400px;
+    }
 
-  .footer{
-    justify-content: center;
-    text-align: center;
-  }
+    .parte-principal{
+        justify-content: center;
 
-  .line{
-    display: none;
-  }
+        text-align: center;
+    }
 
-  .artists-page{
-    gap: 40px;
-  }
+    .pie-pagina{
+        justify-content: center;
+
+        text-align: center;
+    }
+
+    .linea{
+        display: none;
+    }
+
+    .pagina-artistas{
+        gap: 40px;
+    }
 
 }
 
 @media(max-width: 768px){
 
-  .header{
-    flex-direction: column;
-    gap: 30px;
-  }
+    .encabezado{
+        flex-direction: column;
 
-  .navbar{
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
+        gap: 30px;
+    }
 
-  .artists-container{
-    grid-template-columns: 1fr;
-  }
+    .menu{
+        flex-wrap: wrap;
 
-  .hero-text h2{
-    font-size: 1.7rem;
-  }
+        justify-content: center;
 
-  .hero-text p{
-    font-size: 1.1rem;
-  }
+        gap: 20px;
+    }
 
-  .tickets-title h2{
-    font-size: 3rem;
-  }
+    .contenedor-artistas{
+        grid-template-columns: 1fr;
+    }
 
-  .logo h1{
-    font-size: 2.2rem;
-  }
+    .texto-principal h2{
+        font-size: 28px;
+    }
 
-  .footer-news h3{
-    font-size: 1.4rem;
-  }
+    .texto-principal p{
+        font-size: 18px;
+    }
 
-  .footer-input input{
-    width: 100%;
-  }
+    .titulo-entradas h2{
+        font-size: 45px;
+    }
 
-  .artist-item{
-    max-width: 100%;
-  }
+    .logo-rio h1{
+        font-size: 35px;
+    }
 
-  .artist-description-box{
-    min-height: auto;
-  }
+    .texto-footer h3{
+        font-size: 22px;
+    }
+
+    .input-footer input{
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .artista{
+        max-width: 100%;
+    }
+
+    .descripcion-artista{
+        min-height: auto;
+    }
 
 }
